@@ -1,0 +1,6 @@
+var foo = TypeSafe('Null', ['Number', 'String'], function () {
+    return 'Not Null';
+});
+
+foo('Not a Number', 'A String');
+
