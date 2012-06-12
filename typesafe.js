@@ -12,7 +12,7 @@
 (function (exports) {
 
     function getType(parameter) {
-        return stringToType(Object.prototype.toString.call(parameter).match(/\[object (.+)\]/)[1]);
+        return toTypeString(Object.prototype.toString.call(parameter).match(/\[object (.+)\]/)[1]);
     }
 
     function isType(parameter, type) {
