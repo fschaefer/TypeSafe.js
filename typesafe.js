@@ -1,3 +1,14 @@
+/*
+ * typesafe.js: A library for creating typed functions in JavaScript.
+ * 
+ * Copyright (c) 2012 Florian Schäfer (florian.schaefer@gmail.com)
+ * Dual licensed under the MIT (MIT_LICENSE.txt)
+ * and GPL Version 2 (GPL_LICENSE.txt) licenses.
+ *
+ * Version: 1.0
+ * 
+ */
+
 (function (exports) {
 
     function getType(parameter) {
