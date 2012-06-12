@@ -9,7 +9,7 @@
  * 
  */
 
-(function (exports) {
+(function (exports, undefined) {
 
     function getType(parameter) {
         return toTypeString(Object.prototype.toString.call(parameter).match(/\[object (.+)\]/)[1]);
@@ -20,8 +20,11 @@
     }
 
     function toTypeString(type) {
-        if (!type) {
+        if (type === undefined) {
             return 'Undefined';
+        }
+        if (type === null) {
+            return 'Null';
         }
         return type.charAt(0).toUpperCase() + type.slice(1).toLowerCase();
     }
@@ -56,5 +59,5 @@
         };
     };
 
-})(this);
+})(this, undefined);
 
